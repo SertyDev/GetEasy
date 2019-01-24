@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="./css/index.css" >
+        <title>Blank App</title>
+    </head>
+    <body>
+        <div class="cont-extract" >
+            <div>
+                <input type="radio" name="dType" value="audio" class="radio-type" checked /><span id="txtRadioAudio" class="radio-txt">Audio</span>
+                <input type="radio" name="dType" value="video" class="radio-type" /><span id="txtRadioVideo" class="radio-txt">Video</span>                
+            </div>
+            <input id="url" type="url" class="inp-url" placeholder="URL..." />
+            <button id="extract" type="button" class="btn-exctract" onclick="apiCall()" >Extract</button>
+        </div>
+                
+        <img id="spinner" src="./img/spinner_loading.gif" class="spinner" alt="loading..." />
+    </body>    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js" ></script>
+</html>
